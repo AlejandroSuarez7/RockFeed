@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/stylesprin.css"> <link rel="stylesheet" href="fondo.css">
+<link rel="stylesheet" href="css/stylestienda.css"><title>RockFeed</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Redes sociales -->
+<div class="top-bar">
+<div class="logos1">
+    <a href="#"><img src="img/instagram.png" alt="instagram"></a>
+    <a href="#"><img src="img/logotipo-circular-de-facebook (1).png" alt="facebook"></a>
+    <a href="#"><img src="img/youtube.png" alt="youtube"></a>
+    <a href="#"><img src="img/tik-tok.png" alt="tiktok"></a>
+    <a href="#"><img src="img/gorjeo.png" alt="X"></a>
+    <a href="#"><img src="img/logotipo-de-apple.png" alt="Apple"></a>
+    <a href="#"><img src="img/spotify.png" alt="spotify"></a>
+</div>
+</div>
+
+<!-- Header principal -->
+<header class="main-header">
+    <div class="logo"><a href="index.html">RockFeed</a></div>
+<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+<!-- Menú de navegación -->
+    <div class="menu-section" id="menu">
+    <a href="noticias.html">NOTICIAS</a>
+    <a href="biografia.html">BIOGRAFIA</a>
+    <a href="musica.html">MUSICA</a>
+    <a href="videos.html">VIDEOS</a>
+    <a href="tour.html">TOUR</a>
+    <a href="tienda.html">TIENDA</a>
+    <a href="contacto.html">CONTACTO</a>
+    <div class="search-container">
+    <button onclick="showSearch()"><img src="img/lupa.png" width="20px"></button>
+    </div>
+</div>
+
+<!-- Barra de búsqueda dentro del header -->
+<div class="search-full" id="search-full">
+    <input type="text" placeholder="Buscar..." />
+    <button class="close-search" onclick="hideSearch()">✖</button>
+</div>
+<div class="menu-mobile" id="mobileMenu">
+    <a href="noticias.html">NOTICIAS</a>
+    <a href="biografia.html">BIOGRAFIA</a>
+    <a href="musica.html">MUSICA</a>
+    <a href="videos.html">VIDEOS</a>
+    <a href="tour.html">TOUR</a>
+    <a href="tienda.html">TIENDA</a>
+    <a href="contacto.html">CONTACTO</a>
+</div>
+</header>
+<section class="producto-destacado">
+    <h1>Productos Destacados</h1>
+    <div class="productos-destacados2">
+        <div class="producto-grande">
+            <img src="img/producto3.webp" class="img-grande" alt="Producto Destacado">
+            <h3>Serigrafía 13Death</h3>
+            <button onclick="window.location.href='producto3.html'">Ver Producto</button>
+        </div>
+        <div class="productos-pequenos">
+            <div>
+                <img src="img/producto4.webp" alt="Producto Destacado">
+                <h3>Gorra RockFeed</h3>
+                <button onclick="window.location.href='producto4.html'">Ver Producto</button>
+            </div>
+            <div>
+                <img src="img/producto1.webp" alt="Producto Destacado">
+                <h3>Serigrafia RCKFD</h3>
+                <button onclick="window.location.href='producto1.html'">Ver Producto</button>
+            </div>
+            <div>
+                <img src="img/producto6.webp" alt="Producto Destacado">
+                <h3>Buso Negro urban Style</h3>
+                <button onclick="window.location.href='producto6.html'">Ver Producto</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="productos-lista">
+    <h1>Explora más productos</h1>
+    <div class="productos-grid">
+        <div class="producto-card">
+            <img src="img/producto1.webp" alt="Producto 1">
+            <h3>Serigrafia RCKFD</h3>
+            <p>Precio: 100.000</p>
+            <p>Inventario: 10 disponibles</p>
+            <button onclick="window.location.href='producto1.html'">Ver Producto</button>
+        </div>
+        <div class="producto-card">
+            <img src="img/producto2.webp" alt="Producto 2">
+            <h3>Serigrafia PRCD2</h3>
+            <p>Precio: 100.000</p>
+            <p>Inventario: 10 disponibles</p>
+            <button onclick="window.location.href='producto2.html'">Ver Producto</button>
+        </div>
+        <div class="producto-card">
+            <img src="img/producto3.webp" alt="Producto 3">
+            <h3>Serigrafía 13Death</h3>
+            <p>Precio: 145.000</p>
+            <p>Inventario: 5 disponibles</p>
+            <button onclick="window.location.href='producto3.html'">Ver Producto</button>
+        </div>
+        <div class="producto-card">
+            <img src="img/producto4.webp" alt="Producto 4">
+            <h3>Gorra RockFeed</h3>
+            <p>Precio: 300.000</p>
+            <p>Inventario: 3 disponibles</p>
+            <button onclick="window.location.href='producto4.html'">Ver Producto</button>
+        </div>
+        <div class="producto-card">
+            <img src="img/producto5.webp" alt="Producto 5">
+            <h3>Medias Parcha2</h3>
+            <p>Precio: 40.000</p>
+            <p>Inventario: 8 disponibles</p>
+            <button onclick="window.location.href='producto5.html'">Ver Producto</button>
+        </div>
+        <div class="producto-card">
+            <img src="img/producto6.webp" alt="Producto 6">
+            <h3>Buso Negro urban Style</h3>
+            <p>Precio: 400.000</p>
+            <p>Entregado: 30 veces</p>
+            <button onclick="window.location.href='producto6.html'">Ver Producto</button>
+        </div>
+    </div>
+</section>
+
+
+
+<footer id="footer">
+    2025 Café Tacvba | Al visitar nuestro sitio aceptas nuestro 
+    <a href="url-privacidad" target="_blank">Aviso de Privacidad</a> y 
+    <a href="url-condiciones" target="_blank">Términos & Condiciones</a>
+</footer>
+<script src="js/animacionesprin.js"></script>
+</body>
+</html>

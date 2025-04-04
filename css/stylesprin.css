@@ -1,0 +1,418 @@
+*{
+  font-family: "Lato", sans-serif;
+}
+body{
+  background-image: url(img/fondo2.jpg);
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-size: cover; /* Ajusta el tamaño de la imagen al cuerpo completo */
+  background-repeat: no-repeat; /* Evita que se repita */
+  background-attachment: fixed; /* Hace que el fondo permanezca fijo al hacer scroll */
+  background-position: center; /* Centra la imagen */
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);  /* Ajusta la opacidad con este valor */
+  z-index: -1; /* Asegura que esté detrás del contenido */
+}
+
+/* Estilos de la barra superior */
+.top-bar {
+  width: 100%;
+  height: 40px; /* Tamaño reducido del div superior */
+  background-color: #434549;
+  transition: transform 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+.top-bar a {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  
+  padding-left: 7px;
+}
+
+.logos1 {
+  padding: 5px 15px; /* Ajustado para que encaje bien en 40px */
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-left: 60px;
+    
+}
+
+/* Header principal */
+.main-header {
+  display: flex;
+  height: 65px; /* Ajustado para compensar el cambio del top-bar */
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #000000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 40px; /* Ahora empieza justo debajo de la top-bar de 40px */
+  left: 0;
+  width: 100%;
+  font-weight: 900;
+  z-index: 999;
+  transition: top 0.3s ease-in-out, height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+/* Cuando el usuario hace scroll */
+.scrolled .top-bar {
+  transform: translateY(-100%);
+}
+
+.scrolled .main-header {
+  top: 0;
+  height: 50px; /* Se reduce el tamaño del header */
+  padding: 10px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajustar el tamaño del logo si es necesario */
+.scrolled .logo {
+  font-size: 18px;
+}
+
+
+
+.logo{
+  font-size: 34px;
+  font-weight:900;
+  flex: 1;
+  font-style: italic;
+  margin-left: 66px;
+}
+.logo>a{
+  text-decoration: none;
+  color: red;
+}
+
+.menu-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.menu-section.hide {
+  transform: translateY(30px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu-section a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 900;
+  transition: color 0.3s;
+}
+
+.menu-section a:hover {
+  color: #ff0000;
+}
+
+.search-container button {
+  cursor: pointer;
+  font-size: 18px;
+  background: none;
+  border: none;
+  margin-right: 100px;
+}
+
+/* Barra de búsqueda dentro del header (50% ancho) */
+.search-full {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  width: 50%;
+  animation: slideDown 0.4s ease forwards;
+  justify-content: flex-end;
+  margin-right: 100px;
+}
+
+.search-full input {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+/* Borde rojo permanente al abrir */
+.search-full input.activo {
+  border:4px solid #ff0000;
+}
+
+.close-search {
+  font-size: 20px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #ffffff;
+}
+.close-search:hover{
+  transition: color 0.3s;
+  color: red;
+}
+.video1{
+  transition: margin-top 0.9s ease-in-out; 
+  margin-top: 90px;
+}
+video{
+  position: relative;
+  width: 1300px;
+}
+.video-responsive {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  .search-full {
+    width: 100%;
+    padding: 15px 0;
+  }
+}
+.menu-toggle {
+      display: none;
+      cursor: pointer;
+      font-size: 28px;
+      color: white;
+      background: none;
+      border: none;
+      padding: 10px;
+    }
+    .menu-mobile {
+      display: none;
+      flex-direction: column;
+      background: #000;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      padding: 10px 0;
+      margin-top: 40px;
+      
+      z-index: 1000; /* Asegura que esté encima de otros elementos */
+    }
+    .menu-mobile a {
+      padding: 15px;
+      text-align: center;
+      display: block;
+      color: white;
+      text-decoration: none;
+      
+    }
+    .menu-mobile a:hover {
+      background: #ff0000;
+    }
+    @media (max-width: 800px) {
+      .menu-section {
+      display: none;
+      }
+      .menu-toggle {
+      display: block;
+      margin-right: 25px;
+      }
+    }
+    .video-responsive {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  .eslogan {
+      display: flex;
+      justify-content: center; /* Centra horizontalmente */
+      align-items: center; /* Centra verticalmente */
+      height: 80vh; /* Ocupa toda la altura de la pantalla */
+  }
+
+  .eslogan img {
+      max-width: 100%; /* Para que no se desborde en pantallas pequeñas */
+      height: auto;
+  }
+  .noticias {
+    text-align: center;
+    padding: 40px 20px;
+
+}
+
+.textoeventos{
+  color: darkgrey;
+}
+.noticias h2 {
+    font-size: 40px;
+    color:red; 
+    font-weight: 900;
+}
+
+.noticias-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+
+.noticia img {
+    width: 100%;
+    
+}
+
+.noticia p {
+    margin-top: 10px;
+    font-size: 14px;
+    color:white;
+    font-weight: 900;
+}
+.botonnoticias{
+  background-color: black;
+  border: 2px solid red; /* Aumenta el grosor del borde */
+  color: red;
+  padding: 15px 100px;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 900;
+  width: 600px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+#------------
+
+
+
+.musica h2 {
+  font-size: 40px;
+  color:red;
+  font-weight: 900;
+}
+
+.musica-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+gap: 20px;
+max-width: 1000px;
+margin: 0 auto;
+}
+
+
+
+.musica1 img {
+  width: 100%;
+  
+}
+
+.musica1 p {
+  margin-top: 10px;
+  font-size: 14px;
+  color:white;
+  font-weight: 900;
+}
+
+#newsletter{
+  font-size: 28px;
+  font-weight: 900;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+
+}
+#newstitle{
+  color: red;
+  font-weight: 900;
+}
+#newsform{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  
+}
+.newsletter-input{
+  width: 400px;
+  height: 40px;
+  justify-content: center;
+
+  background-color: rgb(255, 255, 255);
+  border-color: red;
+  align-items: center;
+  width: 500px;
+  height: 52px;
+  border-radius: 10px;
+  margin-right: 40px;
+}
+.newsletter-button{
+  border-radius: 4px;
+  background-color: black;
+  border-color: red;
+  color: red;
+  align-items: center;
+  width: 500px;
+  height: 60px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 2px;
+  font-weight: 900;
+}
+
+
+.logossocialesabajo{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 30px;
+}
+.logossocialesabajo>a{
+  padding: 50px 10px;
+}
+
+
+
+#footer {
+  background-color: #141617; /* Fondo oscuro */
+  color: #c4c4c4; /* Texto blanco */
+  text-align: center;
+  padding: 30px;
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
+
+#footer a {
+  color: rgb(63, 63, 63); /* Enlaces en color rojo */
+  text-decoration: none; /* Sin subrayado */
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+#footer a:hover {
+  
+  color: red; /* Subrayado al pasar el cursor */
+}

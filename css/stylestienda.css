@@ -1,0 +1,189 @@
+.producto-destacado {
+    text-align: center;
+    border-bottom:4px outset #ff0000;
+    margin-top: 100px;
+    padding: 40px 20px;
+    background-color: #d4d4d4;
+}
+
+.producto-destacado h1 {
+    font-size: 2rem;
+    color: #333;    
+    margin-bottom: 20px;
+}
+
+.productos-destacados2 {
+    display: grid;
+    grid-template-columns: 1.1fr 2fr;
+    justify-items: center;
+    padding: 20px;
+    align-items: center;
+}
+
+.producto-grande {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    max-width: 350px;
+    border-left: 4px solid #b30000;
+}
+
+.producto-grande img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 8px;
+}
+
+.productos-pequenos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.productos-pequenos div {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    max-width: 200px;
+    border-left: 4px solid #b30000;
+
+}
+
+.productos-pequenos div:hover, .producto-grande:hover {
+    transform: translateY(-5px);
+    border-left: 4px solid #ff0000;
+}
+
+.productos-pequenos img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.productos-pequenos h3, .producto-grande h3 {
+    font-size: 1.3rem;
+    color: #222;
+    margin: 10px 0;
+}
+
+
+
+.productos-pequenos button, .producto-grande button {
+    background: #000000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.productos-pequenos button:hover, .producto-grande button:hover {
+    background: #ff0000;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.7);
+}
+
+@media (max-width: 992px) {
+    .productos-destacados2 {
+        grid-template-columns: 1fr;
+    }
+    .productos-pequenos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .productos-pequenos {
+        grid-template-columns: 1fr;
+    }
+}
+#----------------estilosdelosproductos------------------
+
+.productos-lista {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.productos-lista h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.producto-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    max-width: 250px;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 80px rgba(255, 255, 255, 0.1);
+}
+
+.producto-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.producto-card h3 {
+    font-size: 1.3rem;
+    color: #141414;
+    margin: 10px 0;
+}
+
+.producto-card p {
+    font-size: 1rem;
+    color: #330000;
+}
+
+.producto-card button {
+    background: #000000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.producto-card button:hover {
+    background: #ff0000;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.7);
+}
+
+@media (max-width: 992px) {
+    .productos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .productos-grid {
+        grid-template-columns: 1fr;
+    }
+}

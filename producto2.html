@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/stylesprin.css"> <link rel="stylesheet" href="fondo.css">
+<link rel="stylesheet" href="css/detalledeventa.css"><title>RockFeed</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Redes sociales -->
+<div class="top-bar">
+<div class="logos1">
+    <a href="#"><img src="img/instagram.png" alt="instagram"></a>
+    <a href="#"><img src="img/logotipo-circular-de-facebook (1).png" alt="facebook"></a>
+    <a href="#"><img src="img/youtube.png" alt="youtube"></a>
+    <a href="#"><img src="img/tik-tok.png" alt="tiktok"></a>
+    <a href="#"><img src="img/gorjeo.png" alt="X"></a>
+    <a href="#"><img src="img/logotipo-de-apple.png" alt="Apple"></a>
+    <a href="#"><img src="img/spotify.png" alt="spotify"></a>
+</div>
+</div>
+
+<!-- Header principal -->
+<header class="main-header">
+    <div class="logo"><a href="index.html">RockFeed</a></div>
+<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+<!-- Menú de navegación -->
+    <div class="menu-section" id="menu">
+    <a href="noticias.html">NOTICIAS</a>
+    <a href="biografia.html">BIOGRAFIA</a>
+    <a href="musica.html">MUSICA</a>
+    <a href="videos.html">VIDEOS</a>
+    <a href="tour.html">TOUR</a>
+    <a href="tienda.html">TIENDA</a>
+    <a href="contacto.html">CONTACTO</a>
+    <div class="search-container">
+    <button onclick="showSearch()"><img src="img/lupa.png" width="20px"></button>
+    </div>
+</div>
+
+<!-- Barra de búsqueda dentro del header -->
+<div class="search-full" id="search-full">
+    <input type="text" placeholder="Buscar..." />
+    <button class="close-search" onclick="hideSearch()">✖</button>
+</div>
+<div class="menu-mobile" id="mobileMenu">
+    <a href="noticias.html">NOTICIAS</a>
+    <a href="biografia.html">BIOGRAFIA</a>
+    <a href="musica.html">MUSICA</a>
+    <a href="videos.html">VIDEOS</a>
+    <a href="tour.html">TOUR</a>
+    <a href="tienda.html">TIENDA</a>
+    <a href="contacto.html">CONTACTO</a>
+</div>
+</header>
+
+<button onclick="window.location.href='tienda.html'" class="regresartienda">seguir explorando productos</button>
+
+<section class="detalle-producto">
+    <div class="contenedor-detalle">
+        <div class="info-producto">
+            <h2>Serigrafia PRCD2</h2>
+            <p>Serigrafia elavorada en alta calidad para estampaciones de imágenes trazadas sobre una plantilla o superficie plana, elaborada a partir de sustratos de papel, metal, plástico, tela o vidrio. Consiste en traspasar la tinta sobre un artículo mediante la disposición de una malla.
+                <br>se recomienda en tela blanca
+            </p>
+            <h3>comprar por:</h3>
+            <button class="boton-compra">$100.000</button>
+            <h3>Reseñas</h3>
+            <div class="lista-resenas">
+                <div class="resena">
+                    <p>Mauricio rivero: Excelente calidad, me encantó.</p>
+                </div>
+                <div class="resena">
+                    <p>Luis carlos: Muy buen servicio, lo recomiendo.</p>
+                </div>
+                <div class="resena">
+                    <p>Newton: Increible calidad.</p>
+                </div>
+            </div>
+        </div>
+        <div class="imagen-producto">
+            <img src="img/producto2.webp" alt="Imagen del producto">
+        </div>
+    </div>
+</section>
+
+
+
+<footer id="footer">
+    2025 Café Tacvba | Al visitar nuestro sitio aceptas nuestro 
+    <a href="url-privacidad" target="_blank">Aviso de Privacidad</a> y 
+    <a href="url-condiciones" target="_blank">Términos & Condiciones</a>
+</footer>
+<script src="js/animacionesprin.js"></script>
+</body>
+</html>

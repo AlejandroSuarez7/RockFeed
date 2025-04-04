@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/stylesprin.css">  <title>RockFeed</title><link rel="stylesheet" href="fondo.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Redes sociales -->
+<div class="top-bar">
+  <div class="logos1">
+    <a href="#"><img src="img/instagram.png" alt="instagram"></a>
+    <a href="#"><img src="img/logotipo-circular-de-facebook (1).png" alt="facebook"></a>
+    <a href="#"><img src="img/youtube.png" alt="youtube"></a>
+    <a href="#"><img src="img/tik-tok.png" alt="tiktok"></a>
+    <a href="#"><img src="img/gorjeo.png" alt="X"></a>
+    <a href="#"><img src="img/logotipo-de-apple.png" alt="Apple"></a>
+    <a href="#"><img src="img/spotify.png" alt="spotify"></a>
+  </div>
+</div>
+
+<!-- Header principal -->
+<header class="main-header">
+  <div class="logo"><a href="index.html">RockFeed</a></div>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  
+  <!-- Menú de navegación -->
+  <div class="menu-section" id="menu">
+    <a href="noticias.html">NOTICIAS</a>
+    <a href="biografia.html">BIOGRAFIA</a>
+    <a href="musica.html">MUSICA</a>
+    <a href="videos.html">VIDEOS</a>
+    <a href="tour.html">TOUR</a>
+    <a href="tienda.html">TIENDA</a>
+    <a href="contacto.html">CONTACTO</a>
+    <div class="search-container">
+      <button onclick="showSearch()"><img src="img/lupa.png" width="20px"></button>
+    </div>
+  </div>
+
+  <!-- Barra de búsqueda dentro del header -->
+  <div class="search-full" id="search-full">
+    <input type="text" placeholder="Buscar..." />
+    <button class="close-search" onclick="hideSearch()">✖</button>
+  </div>
+  <div class="menu-mobile" id="mobileMenu">
+    <a href="noticias.html">NOTICIAS</a>
+    <a href="biografia.html">BIOGRAFIA</a>
+    <a href="musica.html">MUSICA</a>
+    <a href="videos.html">VIDEOS</a>
+    <a href="tour.html">TOUR</a>
+    <a href="tienda.html">TIENDA</a>
+    <a href="contacto.html">CONTACTO</a>
+  </div>
+</header>
+
+  <section class="video1">
+    <video class="video-responsive" controls autoplay muted>
+      <source src="video/cafetacvba35yearsconciertos.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de videos.
+    </video>
+    
+
+  </section>
+
+
+<section class="eslogan">
+    <a href=""><img src="img/slogan.jpg" alt=""></a>
+</section>
+
+<section class="noticias">
+  <h2>NOTICIAS</h2>
+  <br><br>
+  <div class="noticias-grid">
+      <div class="noticia">
+          <img src="img/noticia1.jpg" alt="Noticia 1">
+          <p>Celebramos 30 años de RE: Edición Especial en Vinil y Exposición tREinta</p>
+      </div>
+      <div class="noticia">
+          <img src="img/noticia2.jpg" alt="Noticia 2">
+          <p>Genera tu Setlist para el 35 Aniversario</p>
+      </div>
+      <div class="noticia">
+          <img src="img/noticia3.jpg" alt="Noticia 3">
+          <p>35 Aniversario</p>
+      </div>
+  </div>
+<br><br>
+  <a href="" ><button class="botonnoticias"><img src="img/periodico.png" alt="">   NOTICIAS</button></a>
+<br><br><br><br><br>
+  <h2>PROXIMAS FECHAS</h2><br>
+  <p class="textoeventos">no hay eventos programados...</p>
+  <a href="" ><button class="botonnoticias"><img src="img/guitarra-acustica.png" alt="">   TOUR</button></a>
+
+</section>
+
+<br>
+
+<section class="noticias">
+  <h2>MUSICA</h2>
+  <br><br>
+  <div class="musica-grid">
+      <div class="musica1">
+          <img src="img/musica1.jpg" alt="Noticia 1">
+          <p>La Bas(e)</p>
+      </div>
+      <div class="musica1">
+          <img src="img/musica2.jpg" alt="Noticia 2">
+          <p>Fender Session</p>
+      </div>
+      <div class="musica1">
+          <img src="img/musica3.jpg" alt="Noticia 3">
+          <p>Volver a Comenzar Unplugged</p>
+      </div>
+  </div>
+</div>
+<br>
+<a href="" ><button class="botonnoticias"><img src="img/disco-de-musica-con-detalles-en-blanco.png" alt="">           DISCOGRAFIA</button></a>
+
+</section>
+
+
+<section class="noticias">
+  <h2>VIDEOS</h2>
+  <br><br><br>
+  <div class="musica-grid">
+      <div class="musica1">
+          <img src="img/VIDEOS1.jpg" alt="Noticia 1">
+          <p>La Bas(e)</p>
+      </div>
+      <div class="musica1">
+          <img src="img/VIDEOS2.jpg" alt="Noticia 2">
+          <p>Fender Session</p>
+      </div>
+      <div class="musica1">
+          <img src="img/VIDEOS3.jpg" alt="Noticia 3">
+          <p>Volver a Comenzar Unplugged</p>
+      </div>
+  </div>
+</div>
+<br>
+<a href="" ><button class="botonnoticias"><img src="img/camara-de-video.png" alt="">   VIDEOS</button></a>
+
+</section>
+<section>
+  <div id="newsletter">
+    <h1 id="newstitle">NEWSLETTER</h1>
+    <br><br>
+    <form id="newsform">
+        <input type="email" class="newsletter-input" placeholder= "  ✉️  tuemail@correo.com*" required>
+        <button type="submit" class="newsletter-button">Suscribirse</button>
+    </form>
+</div>
+</section>
+
+<section>
+  <div class="logossocialesabajo">
+    <a href="#"><img src="img/logotipo-de-instagram.png" alt="instagram"></a>
+    <a href="#"><img src="img/logotipo-circular-de-facebook (2).png" alt="facebook"></a>
+    <a href="#"><img src="img/youtube (1).png" alt="youtube"></a>
+    <a href="#"><img src="img/tik-tok (1).png" alt="tiktok"></a>
+    <a href="#"><img src="img/gorjeo (1).png" alt="X"></a>
+    <a href="#"><img src="img/logotipo-de-apple (1).png" alt="Apple"></a>
+    <a href="#"><img src="img/spotify (2).png" alt="spotify"></a>
+  </div>
+</section>
+<footer id="footer">
+  2025 Café Tacvba | Al visitar nuestro sitio aceptas nuestro 
+  <a href="url-privacidad" target="_blank">Aviso de Privacidad</a> y 
+  <a href="url-condiciones" target="_blank">Términos & Condiciones</a>
+</footer>
+<script src="js/animacionesprin.js"></script>
+</body>
+
+</html>
